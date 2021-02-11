@@ -4,39 +4,59 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class Timer : MonoBehaviour
+public class TimerManager : MonoBehaviour
 {
+    private static TimerManager _TimerManager = null;
+
+    public static TimerManager Instance()
+    {
+        return _TimerManager;
+    }
+
     [Header("Setting Timer")]
     public float _StartTime;
-    public static float _RemainingTime;
-    public static bool _TimerSetup = false;
+    public float _RemainingTime;
+    private bool _TimerSetup = false;
     private float _TimeInitial;
     public bool _IsPaused = true;
     private float _Minutes;
     private float _Seconds;
 
     [Header("Editeur Setting")]
-    public Text _TimerText;
+    private Text _TimerText;
 
     [Header("Timer Croissant")]
     public UnityEvent _StartExtraTime;
-    public static bool _EndTime = false;
-    public static float _ExtraTime = 0;
+    private bool _EndTime = false;
+    public float _ExtraTime = 0;
 
     [Header("Penality")]
     public float _PenalityTime;
 
+
+
     private void Awake() 
+    {
+        if(_TimerManager == null)
+        {
+            _TimerManager = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void Start()
     {
         if(_TimerSetup == false)
         {
             _RemainingTime = _StartTime;
             _TimerSetup = true;
         }
-    }
-
-    private void Start()
-    {
+        
         _TimeInitial = _RemainingTime;
         Init();
     }
@@ -88,7 +108,22 @@ public class Timer : MonoBehaviour
         string ShowThatSeconds = "" + Mathf.Floor(_Seconds);
         string ShowThatMinutes = "" + _Minutes;
 
-        _TimerText.text = ShowThatMinutes + " : " + ShowThatSeconds;
+        if(_TimerText == null)
+        {
+            if(GameObject.FindGameObjectWithTag("Text_Timer") != null)
+            {         
+                Text TextTimer = GameObject.FindGameObjectWithTag("Text_Timer").GetComponent<Text>();
+                if(TextTimer != null)
+                {   
+                    _TimerText = TextTimer;
+                }
+            }
+        }
+
+        if(_TimerText != null)
+        {  
+            _TimerText.text = ShowThatMinutes + " : " + ShowThatSeconds;
+        }
     }
 
     public void CalculeMinute()
