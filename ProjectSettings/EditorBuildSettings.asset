@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main.unity
     guid: 93a935199c7c59249b5cce6566131898
+  - enabled: 1
+    path: Assets/Scenes/Enigmes/Lanternes.unity
+    guid: 730e61c54adc0914da3cb73d0dd72182
+  - enabled: 1
+    path: Assets/Scenes/Lea.unity
+    guid: 1c3870bdde18010468eb36e275ec406c
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: c3cf974ac5eef794ca1f3e4ee854643a, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 2419d7da6cbc8b64da994e25405779c2, type: 2}
