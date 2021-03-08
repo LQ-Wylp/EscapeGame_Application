@@ -6,5 +6,5 @@ using UnityEngine.Events;
 public class Machine : MonoBehaviour
 {
     public UnityEvent _SuccesCode;
-    public float _Code;
+    public int _Code;
 }
