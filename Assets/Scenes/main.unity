@@ -991,6 +991,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171509308}
   m_CullTransparentMesh: 1
+--- !u!1 &203631413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203631414}
+  - component: {fileID: 203631415}
+  m_Layer: 0
+  m_Name: Machine KitsuneEND
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &203631414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203631413}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 218014360}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203631415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203631413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461f32dc4b5335946a30c902c72f75e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SuccesCode:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 98424370}
+        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: KitsuneEnd
+          m_BoolArgument: 0
+        m_CallState: 2
+  _Code: 39
 --- !u!1 &218014358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1093,10 @@ Transform:
   - {fileID: 312752333}
   - {fileID: 1308410489}
   - {fileID: 1584502121}
+  - {fileID: 1422511420}
+  - {fileID: 1829892905}
+  - {fileID: 1740847626}
+  - {fileID: 203631414}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1483,7 +1546,7 @@ GameObject:
   - component: {fileID: 312752333}
   - component: {fileID: 312752334}
   m_Layer: 0
-  m_Name: Machine1
+  m_Name: Machine Lanterne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1518,19 +1581,19 @@ MonoBehaviour:
   _SuccesCode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312752332}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 98424370}
+        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Lanternes
           m_BoolArgument: 0
         m_CallState: 2
-  _Code: 123
+  _Code: 60
 --- !u!1 &315473586
 GameObject:
   m_ObjectHideFlags: 0
@@ -5537,7 +5600,7 @@ GameObject:
   - component: {fileID: 1308410489}
   - component: {fileID: 1308410490}
   m_Layer: 0
-  m_Name: Machine2
+  m_Name: Machine Coffre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5572,19 +5635,19 @@ MonoBehaviour:
   _SuccesCode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1308410488}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 98424370}
+        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Coffres
           m_BoolArgument: 0
         m_CallState: 2
-  _Code: 456
+  _Code: 97
 --- !u!1 &1320682656
 GameObject:
   m_ObjectHideFlags: 0
@@ -6373,6 +6436,65 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1422511419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422511420}
+  - component: {fileID: 1422511421}
+  m_Layer: 0
+  m_Name: Machine Porte Temple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1422511420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422511419}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 218014360}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1422511421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422511419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461f32dc4b5335946a30c902c72f75e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SuccesCode:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 98424370}
+        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PorteDuTemple
+          m_BoolArgument: 0
+        m_CallState: 2
+  _Code: 95
 --- !u!1 &1473575971
 GameObject:
   m_ObjectHideFlags: 0
@@ -6819,7 +6941,7 @@ GameObject:
   - component: {fileID: 1584502121}
   - component: {fileID: 1584502122}
   m_Layer: 0
-  m_Name: Machine3
+  m_Name: Machine Rituel Purification
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6854,19 +6976,19 @@ MonoBehaviour:
   _SuccesCode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1584502120}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 98424370}
+        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: PurificationTemple
           m_BoolArgument: 0
         m_CallState: 2
-  _Code: 789
+  _Code: 96
 --- !u!1 &1587068085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7365,6 +7487,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734911221}
   m_CullTransparentMesh: 1
+--- !u!1 &1740847625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740847626}
+  - component: {fileID: 1740847627}
+  m_Layer: 0
+  m_Name: "Machine Th\xE9"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740847626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740847625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 218014360}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740847627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740847625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461f32dc4b5335946a30c902c72f75e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SuccesCode:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 98424370}
+        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The
+          m_BoolArgument: 0
+        m_CallState: 2
+  _Code: 89
 --- !u!1 &1752590025
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,6 +7854,65 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _Code: 888
+--- !u!1 &1829892904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829892905}
+  - component: {fileID: 1829892906}
+  m_Layer: 0
+  m_Name: Machine Musique
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829892905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829892904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 218014360}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829892906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829892904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461f32dc4b5335946a30c902c72f75e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SuccesCode:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 98424370}
+        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: NoteMusique
+          m_BoolArgument: 0
+        m_CallState: 2
+  _Code: 84
 --- !u!1 &1864824669
 GameObject:
   m_ObjectHideFlags: 0
@@ -7887,7 +8127,6 @@ MonoBehaviour:
   - {fileID: 1584502122}
   _NumberOne: 0
   _NumberTwo: 0
-  _NumberThree: 0
   Index: 0
   _TextCode: {fileID: 333114888}
   _BadCode:
