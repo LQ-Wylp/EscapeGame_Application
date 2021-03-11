@@ -122,6 +122,16 @@ public class TimerManager : MonoBehaviour
 
         if(_TimerText != null)
         {  
+            if(_Minutes < 10)
+            {
+                ShowThatMinutes = "0" + _Minutes;
+            }
+            
+            if(Mathf.Floor(_Seconds) < 10)
+            {
+                ShowThatSeconds = "0" + Mathf.Floor(_Seconds);
+            }
+
             _TimerText.text = ShowThatMinutes + " : " + ShowThatSeconds;
         }
     }
@@ -167,5 +177,8 @@ public class TimerManager : MonoBehaviour
         {
             _RemainingTime -= _PenalityTime;
         }
+
+        CalculeMinute();
+        RefreshVisuel();
     }
 }
