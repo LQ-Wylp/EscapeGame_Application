@@ -9,9 +9,9 @@ public class NoteMusiqueManager : MonoBehaviour
     public List<int> _CodeEntrer;
     public List<int> _CodeBon;
 
-    public void PressCorde(int NumeroCorde)
+    public void PressCorde(int Direction) // 0 = Vers le bas // 1 = vers le Haut
     {
-        _CodeEntrer.Add(NumeroCorde);
+        _CodeEntrer.Add(Direction);
         _CodeEntrer.RemoveAt(0);
 
         CheckCode();

@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class CordeMusique : MonoBehaviour
 {
-    private bool _Pressed;
-    public int _NumeroCorde;
-    private NoteMusiqueManager _NoteMusiqueManager;
+    private CheckOrderCorde _CheckOrderCorde;
+    public int _NbCorde;
 
     private void Start() 
     {
-        _NoteMusiqueManager = FindObjectOfType<NoteMusiqueManager>();
+        _CheckOrderCorde = FindObjectOfType<CheckOrderCorde>();
     }
 
-    public void OnMouseDown() 
+    private void OnMouseEnter() 
     {
-        
-        _NoteMusiqueManager.PressCorde(_NumeroCorde);
+        _CheckOrderCorde.SurvoleCorde(_NbCorde);
     }
 
 }
