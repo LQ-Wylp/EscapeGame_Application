@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     private static AudioManager _AudioManager = null;
+    public float _VolumeGeneral;
 
     public static AudioManager Instance()
     {
@@ -23,6 +24,8 @@ public class AudioManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    
 
 
 }
