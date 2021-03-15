@@ -179,6 +179,7 @@ public class TimerManager : MonoBehaviour
         if(_RemainingTime <= 0 && _EndTime == false)
         {
             _EndTime = true;
+            _ExtraTime = _RemainingTime * -1;
             _StartExtraTime.Invoke();
         }
 
