@@ -43,12 +43,6 @@ public class TheManager : MonoBehaviour
         }
 
         Index++;
-
-        if (Index >= 3)
-        {
-            CheckCombi();
-            Index = 0;
-        }
         
     }
 
@@ -72,14 +66,6 @@ public class TheManager : MonoBehaviour
                 bonneCombi.RemoveAt(0);
             }  
 
-        }
-        else
-        {
-            //NumberOne = 0;
-            //NumberTwo = 0;
-            //NumberThree = 0;
-
-            Index = 0;
         }
     }
 }
