@@ -37,5 +37,6 @@ public class PurificationTempleManager : MonoBehaviour
     void EndEnigme()
     {
         _EndEvent.Invoke();
+        ARGrissage._ActivedAR = true;
     }
 }
