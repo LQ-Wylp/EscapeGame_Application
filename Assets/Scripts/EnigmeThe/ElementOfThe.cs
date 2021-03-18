@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ElementOfThe : MonoBehaviour
 {
     private TheManager _manager;
-    public bool _First;
+    public int _Index;
+
+    public Sprite _ImageToShow;
+    public Image _ShowWhere;
 
     private void Start()
     {
@@ -14,11 +18,12 @@ public class ElementOfThe : MonoBehaviour
 
     public void PressButton(int Number)
     {
-        if(_First)
-        {
-            _manager.Index = 0;
-        }
+
+        _manager.Index = _Index;
+    
 
         _manager.ChangeNumber(Number);
+
+        _ShowWhere.sprite = _ImageToShow;
     }
 }
