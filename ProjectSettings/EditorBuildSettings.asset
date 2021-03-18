@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main.unity
     guid: 93a935199c7c59249b5cce6566131898
+  - enabled: 1
+    path: Assets/AR/Scene/VufPierre.unity
+    guid: 6478890e35faf1e4ca96633e6986a700
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
