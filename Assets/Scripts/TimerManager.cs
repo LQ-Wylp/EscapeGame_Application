@@ -33,8 +33,6 @@ public class TimerManager : MonoBehaviour
     [Header("Penality")]
     public float _PenalityTime;
 
-
-
     private void Awake() 
     {
         if(_TimerManager == null)
@@ -176,6 +174,13 @@ public class TimerManager : MonoBehaviour
         else
         {
             _RemainingTime -= _PenalityTime;
+        }
+
+        if(_RemainingTime <= 0 && _EndTime == false)
+        {
+            _EndTime = true;
+            _ExtraTime = _RemainingTime * -1;
+            _StartExtraTime.Invoke();
         }
 
         CalculeMinute();

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DisqueAmovible : MonoBehaviour
 {
+    public PorteDuTemple _PorteDuTemple;
     public float _SpeedRotation;
     private Vector3 _CurrentMousePositon;
     private Vector3 _DeltaMousePositon;
@@ -24,6 +25,7 @@ public class DisqueAmovible : MonoBehaviour
 
     private void Start() 
     {
+        _PorteDuTemple = FindObjectOfType<PorteDuTemple>();
         _WidthScreenSize = Screen.width;
         _HeightScreenSize = Screen.height;
 
@@ -104,6 +106,7 @@ public class DisqueAmovible : MonoBehaviour
     public void OnMouseUp() 
     {
         _Pressed = false;
+        _PorteDuTemple.ChecekIfIsGood();
     }
 
 }

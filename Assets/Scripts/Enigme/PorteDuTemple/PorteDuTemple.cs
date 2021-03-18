@@ -8,7 +8,7 @@ public class PorteDuTemple : MonoBehaviour
     public List<DisqueAmovible> _ListDisqueAmovible;
     public UnityEvent _EventEnd;
 
-    void Update()
+    public void ChecekIfIsGood() 
     {
         bool EndEnigme = true;
         for(int i = 0 ; i < _ListDisqueAmovible.Count ; i++)
