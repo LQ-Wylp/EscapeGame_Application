@@ -12,10 +12,10 @@ public class TheManager : MonoBehaviour
     public UnityEvent goodEvent;
     public Text textRecette;
 
-    float NumberOne;
-    float NumberTwo;
-    float NumberThree;
-    int Index = 0;
+    public float NumberOne;
+    public float NumberTwo;
+    public float NumberThree;
+    public int Index = 0;
     int recipe = 1;
 
     void Start()
@@ -75,9 +75,9 @@ public class TheManager : MonoBehaviour
         }
         else
         {
-            NumberOne = 0;
-            NumberTwo = 0;
-            NumberThree = 0;
+            //NumberOne = 0;
+            //NumberTwo = 0;
+            //NumberThree = 0;
 
             Index = 0;
         }
