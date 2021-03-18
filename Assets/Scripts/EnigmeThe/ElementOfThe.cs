@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElementOfThe : MonoBehaviour
 {
     private TheManager _manager;
+    public bool _First;
 
     private void Start()
     {
@@ -13,6 +14,11 @@ public class ElementOfThe : MonoBehaviour
 
     public void PressButton(int Number)
     {
+        if(_First)
+        {
+            _manager.Index = 0;
+        }
+
         _manager.ChangeNumber(Number);
     }
 }
