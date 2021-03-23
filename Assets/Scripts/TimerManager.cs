@@ -66,7 +66,7 @@ public class TimerManager : MonoBehaviour
 
     public void Init()
     {
-        _IsPaused = true;
+        //_IsPaused = true;
         _RemainingTime = _TimeInitial;
 
         CalculeMinute();
@@ -186,4 +186,5 @@ public class TimerManager : MonoBehaviour
         CalculeMinute();
         RefreshVisuel();
     }
+
 }
