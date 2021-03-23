@@ -24,6 +24,8 @@ public class TimerColor : MonoBehaviour
     {
         _Text = GetComponent<Text>();
         _InitialColor = _Text.color;
+        TimerManager.Instance().CalculeMinute();
+        TimerManager.Instance().RefreshVisuel();
     }
 
     
