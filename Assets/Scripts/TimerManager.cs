@@ -27,7 +27,7 @@ public class TimerManager : MonoBehaviour
 
     [Header("Timer Croissant")]
     public UnityEvent _StartExtraTime;
-    private bool _EndTime = false;
+    public bool _EndTime = false;
     public float _ExtraTime = 0;
 
     [Header("Penality")]
