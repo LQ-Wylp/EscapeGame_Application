@@ -18172,9 +18172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d0335d1e0b72194bb6b22ff328a8885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _StartTime: 600
+  _StartTime: 2700
   _RemainingTime: 0
-  _IsPaused: 1
+  _IsPaused: 0
   _StartExtraTime:
     m_PersistentCalls:
       m_Calls:
@@ -20967,7 +20967,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '10 : 00'
+  m_Text: '45 : 00'
 --- !u!222 &1999427673
 CanvasRenderer:
   m_ObjectHideFlags: 0
