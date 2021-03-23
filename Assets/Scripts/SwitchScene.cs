@@ -23,5 +23,5 @@ public class SwitchScene : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync(NameScene);
     }
-
+    
 }
