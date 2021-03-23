@@ -9,7 +9,6 @@ public class EcranIndice : MonoBehaviour
     public List<Indice> _GoodCode;
     public float _NumberOne;
     public float _NumberTwo;
-    public float _NumberThree;
     public int Index = 0;
     public Text _TextCode;
 
@@ -20,7 +19,6 @@ public class EcranIndice : MonoBehaviour
 
         _NumberOne = 0;
         _NumberTwo = 0;
-        _NumberThree = 0;
 
         RefreshEcran();
 
@@ -37,13 +35,9 @@ public class EcranIndice : MonoBehaviour
         {
             _NumberTwo = Number;
         }
-        if(Index == 2)
-        {
-            _NumberThree = Number;
-        }
         Index++;
 
-        if(Index >= 3)
+        if(Index >= 2)
         {
             Index = 0;
         }
@@ -53,12 +47,12 @@ public class EcranIndice : MonoBehaviour
 
     public void RefreshEcran()
     {
-        _TextCode.text = "" + _NumberOne + _NumberTwo + _NumberThree;
+        _TextCode.text = "" + _NumberOne + _NumberTwo;
     }
 
     public void CheckCode()
     {
-        float CodeEntrer = _NumberOne * 100 + _NumberTwo * 10 + _NumberThree * 1;
+        float CodeEntrer = _NumberOne * 10 + _NumberTwo * 1;
 
         bool FalseCode = true;
 
