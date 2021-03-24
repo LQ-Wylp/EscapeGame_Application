@@ -5,27 +5,34 @@ using UnityEngine.Events;
 
 public class ButtonStartPause : MonoBehaviour
 {
-    public static bool _FirstPress = true;
-    public UnityEvent _EventFirstPress;
+    public UnityEvent _EventActive;
+    public UnityEvent _EventDesactive;
 
     public void OnClick()
     {
         TimerManager _TimerManager = TimerManager.Instance();
         _TimerManager.SwitchModePause();
 
-        if(_FirstPress)
+        if(TimerManager.Instance()._IsPaused)
         {
-            _EventFirstPress.Invoke();
-            _FirstPress = false;
+            _EventDesactive.Invoke();
+        }
+        else
+        {
+            _EventActive.Invoke();
         }
 
     }
 
     private void Start() 
     {
-        if(_FirstPress == false)
+        if(TimerManager.Instance()._IsPaused)
         {
-            _EventFirstPress.Invoke();
+            _EventDesactive.Invoke();
+        }
+        else
+        {
+            _EventActive.Invoke();
         }
     }
 }
