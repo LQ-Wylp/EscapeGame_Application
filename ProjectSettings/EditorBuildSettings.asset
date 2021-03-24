@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Enigmes/Coffres.unity
     guid: 28b0c21b9a6e6f4499ffc82fc11be23a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Enigmes/KitsuneEnd.unity
     guid: 8a45b85ad5a02fa4f99ef71de9248305
   - enabled: 1
