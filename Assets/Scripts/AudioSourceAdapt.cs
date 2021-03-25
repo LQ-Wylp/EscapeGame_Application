@@ -18,4 +18,9 @@ public class AudioSourceAdapt : MonoBehaviour
     {
         _AudioSource.volume = _VolumeInitial * AudioManager.Instance()._VolumeGeneral;
     }
+
+    private void Update() 
+    {
+        RefreshVolume();
+    }
 }
