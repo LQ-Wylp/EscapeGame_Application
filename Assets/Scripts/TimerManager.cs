@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class TimerManager : MonoBehaviour
 {
@@ -187,4 +188,12 @@ public class TimerManager : MonoBehaviour
         RefreshVisuel();
     }
 
+    public void ResetGame()
+    {
+        _IsPaused = true;
+        _RemainingTime = _StartTime;
+        ARGrissage._ActivedAR = false;
+
+        SceneManager.LoadScene("main");
+    }
 }
