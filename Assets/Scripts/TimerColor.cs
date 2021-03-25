@@ -22,7 +22,6 @@ public class TimerColor : MonoBehaviour
     public float _DurationFeedbackPenality;
     void Start()
     {
-        _ExtraTime = TimerManager.Instance()._EndTime;
         _Text = GetComponent<Text>();
         _InitialColor = _Text.color;
         TimerManager.Instance().CalculeMinute();
@@ -75,6 +74,8 @@ public class TimerColor : MonoBehaviour
 
     private void Update() 
     {
+        _ExtraTime = TimerManager.Instance()._EndTime;
+
         if(_ExtraTime)
         {
             if(_DirectionVersColorOne)
