@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerBall : MonoBehaviour
 {
-
+    public AudioSource coinsound;
     public Score score;
     public GameObject CoinButton;
     public GameObject CoinReward;
@@ -17,6 +17,7 @@ public class TriggerBall : MonoBehaviour
     {
         if (other.tag == "ball" && score.scoreValue < 3)
         {
+            coinsound.Play();
             score.scoreValue++;
         }
 
