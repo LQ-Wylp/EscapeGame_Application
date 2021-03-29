@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+//using UnityEngine.Events;
 
 public class PorteDuTemple : MonoBehaviour
 {
     public List<DisqueAmovible> _ListDisqueAmovible;
-    public UnityEvent _EventEnd;
+   // public UnityEvent _EventEnd;
+
+    public GameObject AnimTemple;
 
     public void ChecekIfIsGood() 
     {
@@ -21,7 +23,8 @@ public class PorteDuTemple : MonoBehaviour
 
         if(EndEnigme)
         {
-            _EventEnd.Invoke();
+            AnimTemple.SetActive(true);
+          //  _EventEnd.Invoke();
             for(int i = 0 ; i < _ListDisqueAmovible.Count ; i++)
             {
                 _ListDisqueAmovible[i].enabled = false;
