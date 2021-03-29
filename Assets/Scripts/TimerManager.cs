@@ -186,10 +186,13 @@ public class TimerManager : MonoBehaviour
 
         CalculeMinute();
         RefreshVisuel();
+
+        GameObject.FindWithTag("SonPenalite").GetComponent<AudioSource>().Play();
     }
 
     public void ResetGame()
     {
+        Debug.Log("efzeez");
         _IsPaused = true;
         _RemainingTime = _StartTime;
         ARGrissage._ActivedAR = false;
