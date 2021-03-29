@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Text_Timer
   - ball
+  - SonPenalite
   layers:
   - Default
   - TransparentFX
