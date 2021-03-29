@@ -8588,7 +8588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "La geisha semble tr\xE8s satisfaite ! \n\nVeuillez piocher la carte num\xE9ro"
+  m_Text: "La geisha semble tr\xE8s satisfaite ! \n\nVous obtenez un"
 --- !u!222 &889736509
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14036,7 +14036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "M\xE9lisses"
+  m_Text: "M\xE9lisse"
 --- !u!222 &1180026961
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15829,7 +15829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.21960784, b: 0.21960784, a: 1}
+  m_Color: {r: 0.21960783, g: 0.53029525, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15849,7 +15849,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 93
+  m_Text: +13
 --- !u!222 &1977574687
 CanvasRenderer:
   m_ObjectHideFlags: 0
