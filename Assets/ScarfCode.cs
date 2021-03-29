@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScarfCode : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class ScarfCode : MonoBehaviour
     public float HaveScarf = 0;
     public float HaveWin = 0;
     string Name;
+
+    public string scene;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +59,10 @@ public class ScarfCode : MonoBehaviour
                             HaveWin = 1;
                             HaveScarf = 0;
                         }
+                        break;
+
+                    case "KitsuneMask":
+                        SceneManager.LoadScene(scene);
                         break;
                     default:
                         break;
