@@ -50,7 +50,7 @@ pédagogie présente et écoute des élèves
 - Ajouts de la modé 3D (coupelle) avec polish (texture)
 - système de particule (2H)
 
-Avis sur le cour :
+Avis sur le cour : Les cours de code étaient cool, ça se voit que c’était nouveau pour tout le monde, je pense que si on avait tous commencé sur Vuforia ça aurait permis d'éviter certains soucis.
 
 # Axelle Duval :
 - Sound Design
@@ -89,4 +89,4 @@ Avis sur le cour :
 # Lien 
 
 - Video gameplay : https://youtu.be/mXPwLN_piyE
-- Lien apk : 
+- Lien apk : https://nyanpierre.itch.io/escape-game-le-temple-apk
