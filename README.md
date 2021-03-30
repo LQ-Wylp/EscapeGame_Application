@@ -62,18 +62,27 @@ Avis sur le cour : Les cours de code étaient cool, ça se voit que c’était n
 Avis sur le cour :
 
 # Quentin Leuliet :
-- Timer/pénalité
-- Ecran pour rentrer un code
-- Machine coffre
-- Machine porte du temple
-- Machine rituel de purification
-- Machine note de musique
-- Ecran principale
-- Intégration des visuels
-- écran Crédit
-- Ecran énigme
+Mon travail dans l’application :
+•    Création des machines suivantes : « Porte du Temple », « Coffre », « Rituel de Purification » et « Note de musique »
+•    Coder de la majorité des interactions de l’écran principale
+•    Coder le « Timer » et les fonctionnalités qui lui sont associés
+•    Coder les écrans qui permet de lancer d’autre scène en rentrant des codes
+•    Fais la quasi-totalité des intégrations dans UNITY (AR exclue)
+Ressentie des cours : 
+J’ai trouvé un manque de cohérence sur la courbe de difficulté des cours au seins de l’année ainsi qu’un manque d’infos sur nos compétences au début de l’année.
+Nous avons revue durant une bonne partie du début d’année les bases du code et des logiciels que toute personne un minimum investie avais déjà acquis depuis le 1er semestre de l’année dernière, donc de mon point de vue une perte de temps.
+Le niveau à cependant radicalement augmenté lors que nous avons commençais des projets tels le Runner. Ce qui rendais enfin les cours intéressant même si le changement de difficulté soudain étais plutôt étonnant. (On ne parlera même pas du fais que l’on passe d’un projet de Morpion à codé à une physique pour un « Plateformer » sans utiliser la physique de Unity, même moi qui normalement est l’un des meilleurs éléments en code a eu un peu de mal à suivre).
 
-Avis sur le cour :
+Point fort : 
+•    Projet de groupe 
+•    Bonne explication du code
+•    Va chercher les détails pour nous apprendre à faire des rendues digne de ce nom
+•    Tu nous parle de tes expériences personnelles
+Point faible :
+•    Incohérence dans la courbe de progression
+•    Mélanger les horaires cours et projets
+•    Mieux géré le temps afin de viser les détails importants à notre niveau de compétence
+
 
 # Léa Vlieghe
 - Système d'indice
